@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body style="background:black">
+    <nav class="navbar navbar-expand-lg navbar-black bg-black" style="background:black">
+  <a class="navbar-brand" href="#"style="color:white">  <img src="{% static "images/kenobi.png" %}" alt="hello there" style="width:40px;height:40px">  KENOBI <span>REAL ESTATES</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active" >
+        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'main:formNew'%}" style="color:white">FIND ME A<span> PLANET!</span></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron" style="background:#f4d942;margin-bottom:15px">
+  <h1 class="display-4"style="color:black">HELLO THERE !</h1>
+  <p class="lead" style="color:BLACK">Find your ideal home in the Galaxy far far away... </p>
+    <p class="lead" style="color:black;horizontal-align:middle">With KENOBI REAL ESTATES </p>
+  <hr class="my-4">
+  <p style="color:black;align-text:center">With our optimized machine learning algorithm find a suitable planet for your comfort.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{%url 'main:formNew'%}" role="button" style="background-color:black;border:black">GO TO HIGHER GROUNDS</a>
+  </p>
+</div>
+<div class=""><marquee behavior="scroll" direction="left"><h4 style="color:black;background-color:#f4d942"><p>IN A GALAXY FAR FAR AWAY.....IT IS A PERIOD OF CIVIL WAR.
+REBEL SPACESHIPS, STRIKING
+FROM A HIDDEN BASE, HAVE WON
+THEIR FIRST VICTORY AGAINST
+THE EVIL GALACTIC EMPIRE.
+
+DURING THE BATTLE, REBEL
+SPIES MANAGED TO STEAL SECRET
+PLANS TO THE EMPIRE'S
+ULTIMATE WEAPON, THE DEATH
+STAR, AN ARMORED SPACE
+STATION WITH ENOUGH POWER TO
+DESTROY AN ENTIRE PLANET.
+
+PURSUED BY THE EMPIRE'S
+SINISTER AGENTS, PRINCESS
+LEIA RACES HOME ABOARD HER
+STARSHIP, CUSTODIAN OF THE
+STOLEN PLANS THAT CAN SAVE
+HER PEOPLE AND RESTORE
+FREEDOM TO THE GALAXY.....</p></marquee>
+
+
+</div>
+
+<div class="images">
+  <table style="margin:auto">
+    <td> <img src="{% static "images/endor.jpg" %}" alt="hello there" style="width:500px;height:500px">
+      <div class="jumbotron" style="background:#f4d942;width:500px">
+      <h1 class="display-4"style="color:black">ENDOR</h1>
+      <p class="lead" style="color:BLACK">Fine Homes in ENDOR </p>
+        <p class="lead" style="color:black;horizontal-align:middle">With KENOBI REAL ESTATES </p>
+      <hr class="my-4">
+      <p style="color:black;align-text:center">Best Deals at Best Prices</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{%url 'main:formNew'%}" role="button" style="background-color:#50514f;border:#50514f">GO TO HIGHER GROUNDS</a>
+      </p>
+    </div>
+</td>
+<td> <img src="{% static "images/alderaan.jpeg" %}" alt="hello there" style="width:500px;height:500px"><div class="jumbotron" style="background:#f4d942;width:500px">
+  <h1 class="display-4"style="color:black">ALDERAAN</h1>
+  <p class="lead" style="color:BLACK">Relenquish the ashtonishing beauty of ALDERAAN</p>
+    <p class="lead" style="color:black;horizontal-align:middle">With KENOBI REAL ESTATES </p>
+  <hr class="my-4">
+  <p style="color:black;align-text:center">Best deals all across the alderaan. JUST FOR YOU!</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{%url 'main:formNew'%}" role="button" style="background-color:#50514f;border:#50514f">GO TO HIGHER GROUNDS</a>
+  </p>
+</div>
+</td>
+<td> <img src="{% static "images/naboo.jpg" %}" alt="hello there" style="width:500px;height:500px"><div class="jumbotron" style="background:#f4d942;width:500px">
+  <h1 class="display-4"style="color:black">NABOO</h1>
+  <p class="lead" style="color:BLACK">Hottest Properties in NABOO </p>
+    <p class="lead" style="color:black;horizontal-align:middle">With KENOBI REAL ESTATES </p>
+  <hr class="my-4">
+  <p style="color:black;align-text:center">Get the best deals today</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{%url 'main:formNew'%}" role="button" style="background-color:#50514f;border:#50514f">GO TO HIGHER GROUNDS</a>
+  </p>
+</div>
+</td>
+    </table>
+
+</div>
+
+<!--Footer-->
+<footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-4">
+                <h5 class="text-uppercase mb-4 mt-3 font-weight-bold"style="color:grey">ABOUT</h5>
+                <p style="color:#f4d942">Created by<span style="color:white"> Dhananjay Chobhe | SE Comps | 7921 </span>and<span style="color:white"> Sarvesh Gupta | SE Comps | 8125 </span>for Python Django Projects.</p>
+            </div>
+            <!--/.First column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Fourth column-->
+            <div class="col-md-2 mx-auto" style="color:grey">
+                <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">PLANETS</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{%url 'main:formNew'%}" style="color:#f4d942">NABOO</a>
+                    </li>
+                    <li>
+                        <a href="{%url 'main:formNew'%}"style="color:#f4d942">ALDERAAN</a>
+                    </li>
+                    <li>
+                        <a href="{%url 'main:formNew'%}"style="color:#f4d942">ENDOR</a>
+                    </li>
+                    <li>
+                        <a href="{%url 'main:formNew'%}"style="color:#f4d942">HOTH</a>
+                    </li>
+                    <li>
+                        <a href="{%url 'main:formNew'%}"style="color:#f4d942">TATOOINE</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center"style="color:grey">
+        © 2018 Copyright: <h4 style="color:white"> KENOBI TECH </h4>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+  </body>
+</html>
